@@ -13,5 +13,13 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanbiswasdev/dra.claudia-leite-monteiro-tailwindcss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sumanbiswasdev/dra.claudia-leite-monteiro-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/sumanbiswasdev/dra.claudia-leite-monteiro-tailwindcss#readme"
 }
