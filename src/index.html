@@ -14,37 +14,69 @@
 <body>
 
   
-<nav class="bg-white shadow-md"> 
-    <div class="container mx-auto">
-        <div class="flex justify-between items-center p-4">
+<nav class="bg-white p-5 justify-between items-center shadow-md ">
 
-          <div class="flex items-center gap-4">
-          <a href="#"><img class="w-16" src="/logo/toplogoo.png" alt="logo"></a>
-          <div class="flex flex-col">
-            <h3 class="text-lg font-semibold">Dra. Claudia Leite Monteiro</h3>
-            <p class="text-[1rem] font-normal">Fisioterapeuta</p>
-          </div>
+  <div class="container mx-auto">
+
+    <div class="flex justify-between items-center">
+      
+      <div class="flex gap-3 items-center">
+        <a href="#"><img class="w-14" src="/logo/toplogoo.png" alt="logo"></a>
+        <div>
+          <h3 class="text-lg font-semibold"><span>Dra. Claudia Leite Monteiro</span></h3>
+          <p class="text-lg font-light"><span>Fioterapeuta</span></p>
         </div>
+      </div>
 
-        <!-- menu button -->
-         <button id="menuBtn" class="text-2xl text-white bg-clau1 p-2 rounded-md shadow-sm cursor-pointer lg:hidden">
-          <i class="fa-solid fa-indent"></i>
-        </button>
+      <!-- menu btn -->
+      <button id="menuBtn" class="text-2xl p-1 cursor-pointer text-clau1 rounded-sm lg:hidden">
+        <i class="fa-solid fa-indent"></i>
+      </button>
 
-
-        <ul id="menu" class="hidden absolute flex-col bg-white top-20 left-0 gap-2 w-full p-5 shadow-md 
-        lg:static lg:flex lg:flex-row lg:shadow-none lg:w-auto lg:gap-6 lg:mx-auto">
-          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="inicio.html">Inico</a></li>
-          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="sobre.html">Dra. Claudia Leite Monteiro</a></li>
-          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="tratamento.html">Tratamento</a></li>
-          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="video.html">Video</a></li>
-          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="contato.html">Contato</a></li>
-
-        </ul>
-        </div>
+      <!-- desktop menu -->
+      <ul class="hidden lg:flex items-center gap-3 mx-auto text-[1rem] cursor-pointer">
+        <li class="hover:border-b-[0.1rem] p-2 transition duration-700 ease-in-out hover:scale-105">
+          <a href="inicio.html">Início</a></li>
+        <li class="hover:border-b-[0.1rem] p-2 transition duration-700 ease-in-out hover:scale-105">
+          <a href="sobre.html">Dra.Claudia Leite Monteiro</a></li>
+        <li class="hover:border-b-[0.1rem] p-2 transition duration-700 ease-in-out hover:scale-105">
+          <a href="tratamento.html">Tratamento</a></li>
+        <li class="hover:border-b-[0.1rem] p-2 transition duration-700 ease-in-out hover:scale-105">
+          <a href="consultorio.html">Consultorío</a></li>
+        <li class="hover:border-b-[0.1rem] p-2 transition duration-700 ease-in-out hover:scale-105">
+          <a href="contato.html">Contato</a></li>
+      </ul>
     </div>
-  </nav>
 
+    <!-- translate-x-full -->
+    <!-- mobile menu -->
+    <div id="sideBar" class="backdrop-blur-md bg-clau2/30 fixed top-0 right-0 h-full w-full 
+    transform translate-x-full transition-transform duration-300 ease-in-out">
+
+    <!-- close btn -->
+    <div class="flex justify-end p-5">  
+      <button id="closeBtn" class="text-2xl bg-white rounded-sm shadow-sm cursor-pointer mt-3 mr-2">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <ul class="flex flex-col gap-6 p-10 cursor-pointer text-lg">
+      <li class="hover:bg-clau1/30 p-2 rounded-md transition duration-300 ease-in-out hover:-translate-y-1">
+        <a href="inicio.html" class="hover:text-white">Início</a></li>
+      <li class="hover:bg-clau1/30 p-2 rounded-md transition duration-300 ease-in-out hover:-translate-y-1">
+        <a href="sobre.html" class="hover:text-white">Dra.Claudia Leite Monteiro</a></li>
+      <li class="hover:bg-clau1/30 p-2 rounded-md transition duration-300 ease-in-out hover:-translate-y-1">
+        <a href="tratamento.html" class="hover:text-white">Tratamento</a></li>
+      <li class="hover:bg-clau1/30 p-2 rounded-md transition duration-300 ease-in-out hover:-translate-y-1">
+        <a href="consultorio.html" class="hover:text-white">Consultorío</a></li>
+      <li class="hover:bg-clau1/30 p-2 rounded-md transition duration-300 ease-in-out hover:-translate-y-1">
+        <a href="contato.html" class="hover:text-white">Contato</a></li>
+    </ul>
+
+    </div>
+  </div>
+
+</nav>
 
   <script src="https://kit.fontawesome.com/9898c47017.js" crossorigin="anonymous"></script>
   <script src="/js/script.js"></script>

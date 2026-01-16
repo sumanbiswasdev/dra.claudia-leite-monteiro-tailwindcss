@@ -1,14 +1,15 @@
-  const menuBtn = document.getElementById('menuBtn');
-const menu = document.getElementById('menu');
+// Select the elements
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const sideBar = document.getElementById('sideBar');
 
+// Function to open the menu
 menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+  sideBar.classList.remove('translate-x-full'); // Slides it in
 
-    if(menu.classList.contains('hidden')){
-        menuBtn.innerHTML = '<i class="fa-solid fa-indent"></i>';
+});
 
-    }
-    else{
-        menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-    }
+// Function to close the menu
+closeBtn.addEventListener('click', () => {
+  sideBar.classList.add('translate-x-full'); // Slides it out
 });
