@@ -1,35 +1,48 @@
-<!-- Fisioterapia / Chiropractic Therapy / Massagem terapêutica-->
+<nav class="bg-white shadow-md"> 
+    <div class="container mx-auto">
+        <div class="flex justify-between items-center p-4">
 
-    <div class="mt-5 mt-md-8 mt-lg-2 d-md-flex gap-md-2 d-lg-flex gap-lg-2">
-
-      <!-- Fisioterapia -->
-      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
-        <img src="tratamentos-img/fisioterapia.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Fisioterapia</h5>
-          <p class="card-text fw-light lh-sm">A fisioterapia é um dos principais serviços que oferecemos. Nossos fisioterapeutas trabalham em estreita colaboração com os pacientes para ajudá-los a melhorar seu potencial de movimento e alcançar uma vida mais saudável e ativa.</p>
-          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
+          <div class="flex items-center gap-4">
+          <a href="#"><img class="w-16" src="/logo/toplogoo.png" alt="logo"></a>
+          <div class="flex flex-col">
+            <h3 class="text-lg font-semibold">Dra. Claudia Leite Monteiro</h3>
+            <p class="text-[1rem] font-normal">Fisioterapeuta</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Terapia Quiroprática -->
-      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
-        <img src="tratamentos-img/quiropraxia.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Terapia Quiroprática</h5>
-          <p class="card-text fw-light lh-sm">Somos uma das clínicas de quiropraxia mais avançadas e contamos com os equipamentos mais modernos, que auxiliam nossos médicos no diagnóstico e tratamento de dores nas costas, problemas de coluna, dores no pescoço e muito mais…</p>
-          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
+        <!-- menu button -->
+         <button id="menuBtn" class="text-2xl text-white bg-clau1 p-2 rounded-md shadow-sm cursor-pointer lg:hidden">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+
+
+        <ul id="menu" class="hidden absolute flex-col bg-white top-20 left-0 gap-2 w-full p-5 shadow-md 
+        lg:static lg:flex lg:flex-row lg:shadow-none lg:w-auto lg:gap-6 lg:mx-auto">
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="inicio.html">Inico</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="sobre.html">Dra. Claudia Leite Monteiro</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="tratamento.html">Tratamento</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="video.html">Video</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="contato.html">Contato</a></li>
+
+        </ul>
         </div>
-      </div>
-
-      <!-- Massagem terapêutica -->
-      <div class="card mt-2 mt-md-0 mt-lg-0 mx-auto" style="width: 18rem;">
-        <img src="tratamentos-img/massagem.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Massagem terapêutica</h5>
-          <p class="card-text fw-light lh-sm">A massagem terapêutica é um tratamento manual que envolve a manipulação dos tecidos moles do corpo para prevenir e aliviar dores, desconfortos e espasmos musculares. Massagem terapêutica…</p>
-          <a href="#" class="text-decoration-none slide-right-sm">Saiba mais <i class="fa-solid fa-caret-right "></i></a>
-        </div>
-      </div>
-
     </div>
+  </nav>
+
+
+
+
+  const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+
+    if(menu.classList.contains('hidden')){
+        menuBtn.innerHTML = '<i class="fa-solid fa-indent"></i>';
+
+    }
+    else{
+        menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    }
+});
