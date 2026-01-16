@@ -13,13 +13,13 @@
 </head>
 <body>
 
-  <nav class="bg-white p-4 shadow-md">
+  <nav class="bg-white shadow-md">
     
     <div class="container mx-auto">
 
-      <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center p-4">
 
-        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4">
           <a href="#"><img class="w-16" src="/logo/toplogoo.png" alt="logo"></a>
           <div class="flex flex-col">
             <h3 class="text-lg font-semibold">Dra. Claudia Leite Monteiro</h3>
@@ -27,12 +27,30 @@
           </div>
         </div>
 
-      </div>
+        <!-- menu button -->
+         <button id="menuBtn" class="text-2xl text-white bg-clau1 p-2 rounded-md shadow-sm cursor-pointer lg:hidden">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+
+
+        <ul id="menu" class="hidden absolute flex-col bg-white top-20 left-0 gap-2 w-full p-5 shadow-md 
+        lg:static lg:flex lg:flex-row lg:shadow-none lg:w-auto lg:gap-6 lg:mx-auto">
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0 p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="inicio.html">Inico</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="sobre.html">Dra. Claudia Leite Monteiro</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="tratamento.html">Tratamento</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="video.html">Video</a></li>
+          <li class="hover:bg-clau2 lg:hover:bg-transparent lg:hover:border-b-[0.1rem] rounded lg:rounded-0  p-2 cursor-pointer"><a class="hover:text-white lg:hover:text-black cursor-pointer text-lg lg:text-sm" href="contato.html">Contato</a></li>
+
+        </ul>
+
+        </div>
 
     </div>
 
   </nav>
 
+
+  <script src="https://kit.fontawesome.com/9898c47017.js" crossorigin="anonymous"></script>
   <script src="/js/script.js"></script>
 </body>
 </html>

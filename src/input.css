@@ -3,5 +3,6 @@
 @import "tailwindcss";
 
 @theme{
-    --color-clau1: #EFFAFB;
+    --color-clau1: #745390;
+    --color-clau2: #9677b4;
 }
