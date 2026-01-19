@@ -6,6 +6,7 @@ close button
 <i class="fa-solid fa-xmark"></i>
 
 transition duration-300 ease-in-out hover:-translate-y-1 (up)
+ transition duration-300 ease-in-out hover:translate-x-1 (right side)
 
 transition duration-700 ease-in-out hover:scale-105 (zoom)
 

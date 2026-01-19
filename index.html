@@ -96,18 +96,70 @@
           <p class="text-lg font-light my-1"><span><i class="fa-regular fa-circle-check text-clautext1 text-lg mr-2"></i>Planos de tratamento personalizados</span></p>
           <p class="text-lg font-light my-1"><span><i class="fa-regular fa-circle-check text-clautext1 text-lg mr-2"></i>Abordagem holística à saúde</span></p>
 
-          <button class="cursor-pointer bg-gradient-to-r from-gre1 to-gre2 text-white 
-          text-lg lg:text-3xl font-semibold p-4 rounded-lg my-5 hover:shadow-lg hover:text-clautext1 hover:bg-black">Agendar Consulta</button>
+          <div class="flex flex-col md:flex-row md:gap-5 align-items-center mt-5">
+            <button class="cursor-pointer bg-gradient-to-r from-gre1 to-gre2 text-white text-lg font-semibold 
+             p-2 md:p-5 lg:p-4 rounded-lg my-5 hover:shadow-lg transition duration-300 ease-in-out hover:translate-x-1">
+              Agendar Consulta <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+
+            <button class="cursor-pointer border border-2 text-clautext1 text-lg font-semibold 
+             p-2 md:p-5 lg:p-4 rounded-lg my-5 hover:shadow-lg transition duration-300 ease-in-out hover:translate-x-1">
+              Ver os Serviços
+            </button>
+          </div>
+
+        
         </div>
 
-        <div>
-          <img class="w-full lg:w-96 mt-10 lg:mt-0 rounded-md shadow-lg" src="/tratamentos-img/fisioterapia.jpg" alt="Fisioterapia">
-        </div>
+          <!-- ===================== IMAGE SLIDER WRAPPER ===================== -->
+          <div class="relative max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto mt-10 overflow-hidden rounded-xl shadow-lg">
 
+            <!-- ===================== SLIDER IMAGES ===================== -->
+            <!-- * flex → puts images side-by-side  * transition → smooth animation when sliding  -->
+
+            <div id="slider" class="flex transition-all ease-in-out duration-700">
+              <img src="/bg/11.jpg" class="w-full flex-shrink-0"/>
+              <img src="/bg/33.jpg" class="w-full flex-shrink-0"/>
+              <img src="/bg/44.jpg" class="w-full flex-shrink-0"/>
+            </div>
+
+            <!-- ===================== BUTTONS (PREV/NEXT) ===================== -->
+            <button id="prev" class="absolute py-2 px-3 left-3 top-1/2 -translate-y-1/2 bg-white/70 rounded-full shadow-md cursor-pointer">
+              <i class="fa-solid fa-chevron-left"></i></button>
+
+            <button id="next" class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 py-2 px-3 rounded-full shadow-md cursor-pointer"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+
+        </div>
       </div>
-      </div>
-      
     </section>
+
+    <!-- sobre dra. claudia leite monteiro -->
+    <section>
+
+      <div class="container mx-auto">
+
+        <div class="lg:flex lg:flex-row px-5 lg:px-0 py-10">
+
+          <div>
+          <img class="rounded-lg" src="bg/claudia-ai-3_3.jpg" alt="claudia-foto">
+          </div>
+
+        <div class="lg:px-5 py-5">
+          <p class="text-lg md:text-2xl lg:text-3xl font-light text-clautext1"><span>Sobre</span></p>
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold mt-5"><span>Dra. Claudia Leite Monteiro</span></h2>
+          <p class="text-lg md:text-2xl lg:text-3xl font-light"><span>Fisioterapeuta</span></p>
+          <h2 class="text-lg md:text-xl lg:text-2xl font-medium mt-5"><span>Dedicada à sua saúde e bem-estar</span></h2>
+          <p class="text-lg font-light max-w-7xl text-justify"><span>Com mais de uma década de experiência em fisioterapia e bem-estar holístico, estamos comprometidos em oferecer cuidados excepcionais que abordam não apenas os sintomas, mas também as causas profundas de suas preocupações.</span></p>
+
+          <p class="text-lg font-light max-w-7xl text-justify mt-5"><span>Nossa abordagem combina técnicas de fisioterapia baseadas em evidências com terapias complementares para criar planos de tratamento personalizados. Acreditamos em capacitar nossos pacientes com o conhecimento e as ferramentas necessárias para a saúde e o bem-estar a longo prazo.</span></p>
+        </div>
+        </div>
+
+      </div>
+
+    </section>
+
   </main> 
 
   <script src="https://kit.fontawesome.com/9898c47017.js" crossorigin="anonymous"></script>

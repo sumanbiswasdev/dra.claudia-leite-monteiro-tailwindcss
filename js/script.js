@@ -1,15 +1,20 @@
-// Select the elements
-const menuBtn = document.getElementById('menuBtn');
-const closeBtn = document.getElementById('closeBtn');
-const sideBar = document.getElementById('sideBar');
+const slider = document.getElementById('slider')
+const totalSlides = slider.children.length
 
-// Function to open the menu
-menuBtn.addEventListener('click', () => {
-  sideBar.classList.remove('translate-x-full'); // Slides it in
+let currentIndex = 0
 
-});
+function updateSlider(){
 
-// Function to close the menu
-closeBtn.addEventListener('click', () => {
-  sideBar.classList.add('translate-x-full'); // Slides it out
-});
+    // Move slider left based on the index
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+document.getElementById("next").onclick = () => {
+    currentIndex = (currentIndex + 1) % totalSlides; // Loop back to first
+    updateSlider();
+  };
+
+  document.getElementById("prev").onclick = () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Loop to last
+    updateSlider();
+  };
