@@ -1,3 +1,22 @@
+
+// Sidebar Functionality
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const sideBar = document.getElementById("sideBar");
+
+  // Show Menu
+  menuBtn.addEventListener("click", () => {
+    sideBar.classList.remove("translate-x-full");
+  });
+
+  // Hide Menu
+  closeBtn.addEventListener("click", () => {
+    sideBar.classList.add("translate-x-full");
+  });
+
+
+
+// Slider Functionality
 const slider = document.getElementById('slider')
 const totalSlides = slider.children.length
 
