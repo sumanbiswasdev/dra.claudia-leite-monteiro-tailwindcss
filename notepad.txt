@@ -34,89 +34,10 @@ fontawesome kit
 <script src="https://kit.fontawesome.com/9898c47017.js" crossorigin="anonymous"></script>
 
 
+<p class="text-center lg:text-left text-lg font-light">© 2024 Fisioterapia Claudia Leite Monteiro. Todos os direitos reservados.</p>
+<div class="flex justify-center lg:justify-end gap-5 mt-3 lg:mt-0">
 
-
-<!-- Horário de atendimento -->
-        <div class="bg-white rounded-lg shadow-md p-6 cursor-pointer">
-          <div class="flex justify-center items-center w-16 h-16 bg-clau4 rounded-xl mb-5">
-            <i class="fa-solid fa-clock text-2xl text-clautext1"></i>
-
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Horário de atendimento</h3>
-          <p class="text-slate-500">Segunda a Sexta: 09h às 19h</p>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- forms -->
-        <div class="bg-white rounded-lg shadow-md px-5 py-10 mt-10">
-
-          <h3 class="text-xl font-semibold mb-4">Envie uma mensagem</h3>
-          <form action="#" class="w-full">
-
-            <!-- Nome -->
-            <div>
-              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Seu nome">
+              <a href="#" class="text-clautext1 hover:text-clau4 transition duration-500 ease-in-out"><i class="fa-brands fa-instagram text-xl"></i></a>
+              <a href="#" class="text-clautext1 hover:text-clau4 transition duration-500 ease-in-out"><i class="fa-brands fa-facebook text-xl"></i></a>
+              <a href="#" class="text-clautext1 hover:text-clau4 transition duration-500 ease-in-out"><i class="fa-brands fa-whatsapp text-xl"></i></a>
             </div>
-
-            <!-- Email and Phone -->
-            <div class="lg:flex lg:flex-row items-center gap-5">
-              <div>
-              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="email">Email:</label>
-              <input type="text" id="email" name="email" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Seu email">
-            </div>
-            <div>
-              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="phone">Phone:</label>
-              <input type="text" id="phone" name="phone" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Seu telefone">
-            </div>
-            </div>
-
-            <!-- Serviço de interesse em -->
-
-            <div>
-              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="servico">Serviço de interesse em:</label>
-              <select name="servico" id="servico" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1">
-                <option value="#" class="bg-clautext1 text-clau4">Selecione um serviço</option>
-                <option value="fisioterapia">Fisioterapia</option>
-                <option value="quiropraxia">Quiropraxia</option>
-                <option value="massagem">Massagem</option>
-                <option value="drenagem-linfatica">Drenagem linfática</option>
-                <option value="limpeza-de-pele">Limpeza de pele</option>
-                <option value="peeling">Peeling</option>
-                <option value="pos-operatorio">Pós-operatório</option>
-                <option value="tratamento-facias">Tratamento facias</option>
-                <option value="acupuntura">Acupuntura</option>
-                <option value="terapia-neural">Terapia neural</option>
-              </select>
-            </div>
-
-              
-
-            <!-- Mensagem -->
-            <div>
-              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="4" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Sua mensagem"></textarea>
-            </div>
-
-          </form>
-          
-        </div>

@@ -399,8 +399,9 @@
 
         <!-- all grid -->
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-5 lg:px-0 pb-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-5 lg:px-0 pb-20">
 
+          <!-- Celular / E-mail / Endereço / Horário de atendimento / map -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
 
             <!-- Celular -->
@@ -443,20 +444,113 @@
             <p class="text-slate-500">Segunda a Sexta: 09h às 19h</p>
           </div>
 
-            <!--  -->
-          <div class="mx-auto ">
-            <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6946717875653!2d-46.59018592391602!3d-23.507504659617304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f4eb9f61095%3A0xbe396e9662869239!2sAv.%20Alberto%20Byington%2C%20643%20-%20Vila%20Maria%20Alta%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002127-000!5e0!3m2!1sen!2sbr!4v1768954531382!5m2!1sen!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- map -->
+          <div class="lg:col-span-2 cursor-pointer">
+            <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6946717875653!2d-46.59018592391602!3d-23.507504659617304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f4eb9f61095%3A0xbe396e9662869239!2sAv.%20Alberto%20Byington%2C%20643%20-%20Vila%20Maria%20Alta%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002127-000!5e0!3m2!1sen!2sbr!4v1768954531382!5m2!1sen!2sbr" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           </div>
 
-          </div>
+          <!-- forms -->
+        <div class="bg-white rounded-lg shadow-md px-5 py-10 ">
+
+          <h3 class="text-xl font-semibold mb-4">Envie uma mensagem</h3>
+          <form action="#" class="w-full">
+
+            <!-- Nome -->
+            <div>
+              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Seu nome">
+            </div>
+
+            <!-- Email and Phone -->
+            <div class="lg:grid lg:grid-cols-2 lg:gap-4 items-center">
+              <div>
+              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="email">Email:</label>
+              <input type="text" id="email" name="email" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Seu email">
+            </div>
+            <div>
+              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="11 9XXXX-XXXX">
+            </div>
+            </div>
+
+            <!-- Serviço de interesse em -->
+
+            <div>
+              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="servico">Serviço de interesse em:</label>
+              <select name="servico" id="servico" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1">
+                <option value="#" class="bg-clautext1 text-clau4">Selecione um serviço</option>
+                <option value="fisioterapia">Fisioterapia</option>
+                <option value="quiropraxia">Quiropraxia</option>
+                <option value="massagem">Massagem</option>
+                <option value="drenagem-linfatica">Drenagem linfática</option>
+                <option value="limpeza-de-pele">Limpeza de pele</option>
+                <option value="peeling">Peeling</option>
+                <option value="pos-operatorio">Pós-operatório</option>
+                <option value="tratamento-facias">Tratamento facias</option>
+                <option value="acupuntura">Acupuntura</option>
+                <option value="terapia-neural">Terapia neural</option>
+              </select>
+            </div>
+
+            <!-- Mensagem -->
+            <div>
+              <label class="block text-lg font-medium mb-2 after:ml-0.5 after:text-red-500 after:content-['*']" for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="4" class="w-full bg-slate-100 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-clautext1" placeholder="Sua mensagem"></textarea>
+            </div>
+
+            <!-- button -->
+
+            <button class="w-full text-clautext1 font-semibold bg-clau4 p-2 rounded-lg mt-2 cursor-pointer hover:bg-clautext1 hover:text-white
+          transition duration-500 ease-in-out"><a href="fisioterapia.html">Enviar mensagem <i class="fa-solid fa-paper-plane text-sm ml-2"></i> </a></button>
+          </form>
+          
+        </div>
 
         </div>
     </section>
 
+    <!-- footer -->
 
+    <footer>
+      <div class="bg-clau4 py-10">
+        <div class="container mx-auto px-5 lg:px-0">
 
+          <!-- all grid -->
+          <div class="lg:grid lg:grid-cols-4 gap-5 lg:gap-8">
 
+            <div class="lg:flex lg:flex-col">
+              <div class="lg:flex lg:flex-row text-left mb-2 gap-1">
+              <img class="w-20 mb-5 lg:mb-0" src="/logo/toplogoo.png" alt="logo">
+              <div class="lg:flex lg:flex-col text-left">
+                <h4 class="text-clautext1 text-2xl font-bold lg:ml-3">Fisioterapia</h4>
+                <p class="text-black text-lg font-normal lg:ml-3">Cuidados Profissionais</p> 
+              </div>
+            </div>
 
+            <div>
+              <p class="text-black text-sm text-justify font-normal mb-5">Seu parceiro de confiança em saúde e bem-estar. Nosso compromisso é ajudá-lo(a) 
+              a alcançar a saúde ideal por meio de cuidados personalizados e profissionais.</p>
+            </div>
+
+            <div class="text-clautext1 cursor-pointer">
+              <a href="#" class="hover:bg-clautext1 rounded-sm hover:text-white p-2 inline-block transition duration-500 ease-in-out hover:-translate-y-1"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+              <a href="#" class="hover:bg-clautext1 rounded-sm hover:text-white p-2 inline-block transition duration-500 ease-in-out hover:-translate-y-1"><i class="fa-brands fa-instagram text-2xl"></i></a>
+              <a href="#" class="hover:bg-clautext1 rounded-sm hover:text-white p-2 inline-block transition duration-500 ease-in-out hover:-translate-y-1"><i class="fa-brands fa-facebook text-2xl"></i></a>
+              <a href="#" class="hover:bg-clautext1 rounded-sm hover:text-white p-2 inline-block transition duration-500 ease-in-out hover:-translate-y-1"><i class="fa-brands fa-tiktok text-2xl"></i></a>
+              <a href="#" class="hover:bg-clautext1 rounded-sm hover:text-white p-2 inline-block transition duration-500 ease-in-out hover:-translate-y-1"><i class="fa-brands fa-youtube text-2xl"></i></a>
+            </div>
+
+            
+
+            
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     
