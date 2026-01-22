@@ -1,4 +1,5 @@
 
+
 // Sidebar Functionality
   const menuBtn = document.getElementById("menuBtn");
   const closeBtn = document.getElementById("closeBtn");
