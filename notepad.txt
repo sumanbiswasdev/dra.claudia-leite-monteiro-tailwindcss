@@ -41,3 +41,7 @@ fontawesome kit
               <a href="#" class="text-clautext1 hover:text-clau4 transition duration-500 ease-in-out"><i class="fa-brands fa-facebook text-xl"></i></a>
               <a href="#" class="text-clautext1 hover:text-clau4 transition duration-500 ease-in-out"><i class="fa-brands fa-whatsapp text-xl"></i></a>
             </div>
+
+
+
+            
